@@ -291,12 +291,13 @@
         FOREIGN KEY (student_id) REFERENCES Students(student_id),
         FOREIGN KEY (course_id) REFERENCES Courses(course_id)
     );
+    ```
+    
   - 搭建好了本地的MongoDB环境，进行了简单的测试，能够使用√，如图是MongDB官方GUI界面，很美观，但我更喜欢集成的东西：
 <img src="mongo1.png" alt="mongodb">
   - 你如果看了我之前的，应该会猜到，我又在VSCode上配置了这个，废话不说，如图：
 <img src="vscode_mongodb.png" alt="vscode配置mongodb">
 
-    ```
 - **反思**：
   - 画ER图让我有种“设计蓝图”的感觉，挺有成就感
   - 一对多和多对多的区别让我思考了好久
@@ -304,6 +305,9 @@
     ```
     .\mongod.exe --dbpath D:\MongoDB\data\db #启动代码
     ```
+  - 启动以后如下，有一系列日志信息输出，并不是错误，而是启动成功：
+<img src="mongoexe.png" alt="vscode配置mongodb">
+
 - **注意事项**：
   - ER图要明确关系类型（一对一、一对多等）
   - 转换到表时注意主键和外键的设置
