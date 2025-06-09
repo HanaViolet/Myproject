@@ -291,9 +291,11 @@
         FOREIGN KEY (student_id) REFERENCES Students(student_id),
         FOREIGN KEY (course_id) REFERENCES Courses(course_id)
     );
-  - 搭建好了本地的MongoDB环境，进行了简单的测试，能够使用√
+  - 搭建好了本地的MongoDB环境，进行了简单的测试，能够使用√，如图是MongDB官方GUI界面，很美观，但我更喜欢集成的东西：
+<img src="mongo1.png" alt="mongodb">
   - 你如果看了我之前的，应该会猜到，我又在VSCode上配置了这个，废话不说，如图：
-<img src="image.png" alt="命令行工具界面">
+<img src="vscode_mongodb.png" alt="vscode配置mongodb">
+
     ```
 - **反思**：
   - 画ER图让我有种“设计蓝图”的感觉，挺有成就感
