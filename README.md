@@ -297,6 +297,8 @@
 <img src="mongo1.png" alt="mongodb">
   - 你如果看了我之前的，应该会猜到，我又在VSCode上配置了这个，废话不说，如图：
 <img src="vscode_mongodb.png" alt="vscode配置mongodb">
+  - 再展示一张ER图示例：
+<img src="ER.png" alt="vscode配置mongodb">
 
 - **反思**：
   - 画ER图让我有种“设计蓝图”的感觉，挺有成就感
