@@ -279,6 +279,7 @@
 - **学习内容**：
   - 绘制ER图
   - 实体、属性和关系的表示
+  - 配置了一个非关系型数据库，我配置的是MongoDB
 - **收获**：
   - 学会了用ER图表示数据库结构
   - 示例：学生-课程多对多关系的ER图转换为表：
@@ -290,10 +291,17 @@
         FOREIGN KEY (student_id) REFERENCES Students(student_id),
         FOREIGN KEY (course_id) REFERENCES Courses(course_id)
     );
+  - 搭建好了本地的MongoDB环境，进行了简单的测试，能够使用√
+  - 你如果看了我之前的，应该会猜到，我又在VSCode上配置了这个，废话不说，如图：
+<img src="image.png" alt="命令行工具界面">
     ```
 - **反思**：
   - 画ER图让我有种“设计蓝图”的感觉，挺有成就感
   - 一对多和多对多的区别让我思考了好久
+  - NoSql数据库感觉比之前的麻烦一些，仅仅是启动都要先在终端启动（我感觉是这样的，还没找到更好的方法）
+    ```
+    .\mongod.exe --dbpath D:\MongoDB\data\db #启动代码
+    ```
 - **注意事项**：
   - ER图要明确关系类型（一对一、一对多等）
   - 转换到表时注意主键和外键的设置
