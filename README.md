@@ -143,8 +143,8 @@
     WHERE score > (SELECT AVG(score) FROM Students);
     ```
 - **反思**：
-  - NULL和UNKNOWN的逻辑绕晕我了，得多练
-  - 子查询嵌套写起来爽，但调试错误很痛苦
+  - NULL和UNKNOWN的逻辑绕晕我了，得多练多理解
+  - 子查询嵌套写起来爽，有点像编程里的递归
 - **注意事项**：
   - NULL在比较时要用`IS NULL`而非`= NULL`
   - 子查询可能影响性能，需优化复杂查询
